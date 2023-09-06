@@ -1,0 +1,148 @@
+---
+import MainLayout from "../layout/MainLayout.astro";
+---
+
+<MainLayout title="Tema 5">
+    <main>
+        <h1>Tema 5 - Grundlæggende indhold</h1>
+        <section class="grid_1-1">
+          <div class="text">
+            <h2>05.01.02 Pilotsite</h2>
+            <p>
+              I denne opgave skulle vi lave et website, der præsenterede videoen vi redigerede i premiere pro. Videoen var et 1 minuts interview med en person, der fortalte om sin passion. Vi skulle minimun have 4 stilfotos et baggrundsbillede, portræt
+              foto, højformat foto og bredformat. Filmen skulle lægges ind på 2 forskellige måder. Vi skulle skrive tekster der fik pilotsitet til og fremstå som en ”filmplakat”.
+            </p>
+          </div>
+          <div class="pic">
+            <img src="/img/pilotsite.webp" alt="Pilotsite for passion om træning billede" />
+            <div class="button">
+              <a href="https://idax7074.github.io/publ/">Helena Coaching</a>
+            </div>
+          </div>
+          <div class="pic1">
+            <img src="/img/lafresca.webp" alt="La fresca website billede" />
+            <div class="button reverse">
+              <a href="https://idax7074.github.io/Redesign_RESI/">La fresca</a>
+            </div>
+          </div>
+          <div class="text order">
+            <h2>05.02.01 Redesign og temadokumentation</h2>
+            <p>
+              I dette tema skulle vi redesigne en selvvalgt virksomheds website. Redesignet skulle ende ud i et kodet website og indeholde tekst, foto og video. Vi skulle også aflevere et procesdokument, som dokumenterede vores arbejdsproces. I
+              gruppearbejdet skulle vi arbejde ud fra SCRUM metoden. Vi skulle bruge de researchmetoder vi lærte tidligere.
+            </p>
+          </div>
+          <div class="pic2">
+            <img src="/img/lafresca.webp" alt="La fresca website billede" />
+            <div class="button reverse">
+              <a href="https://idax7074.github.io/Redesign_RESI/">La fresca</a>
+            </div>
+          </div>
+        </section>
+      </main>
+</MainLayout>
+
+<style>
+    main {
+  max-width: 1200px;
+}
+
+section {
+  background-color: #e77d7940;
+  padding: 50px;
+}
+
+h1 {
+  margin-bottom: 80px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.button {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.button a {
+  background-color: var(--septenary);
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: var(--primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: parity-sans, sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-style: normal;
+}
+
+.button a:hover{
+    background-color: var(--primary);
+  color: var(--septenary);
+  border: 1px solid var(--septenary);
+}
+
+.reverse a {
+  background-color: var(--primary);
+  color: var(--septenary);
+  border: 1px solid var(--septenary);
+  padding: 15px 40px;
+}
+
+.reverse a:hover {
+    background-color: var(--septenary);
+    color: var(--primary);
+}
+
+@media (min-width: 821px) {
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 100px;
+  }
+
+  .order h2 {
+    text-align: end;
+  }
+
+  .order p {
+    text-align: end;
+  }
+
+  .pic2 {
+    display: none;
+  }
+}
+
+@media (max-width: 820px) {
+  main {
+    margin-inline: 10px;
+  }
+
+  section {
+    padding: 25px;
+    border-radius: 5px;
+  }
+
+  .pic1 {
+    display: none;
+  }
+
+  .button {
+    margin-bottom: 80px;
+  }
+}
+
+</style>
