@@ -1,0 +1,114 @@
+---
+import MainLayout from "../layout/MainLayout.astro";
+import Squares from "../components/Squares.astro";
+import ScrollImage from "../components/ScrollImage.astro";
+---
+
+<MainLayout title="Forside">
+	<main>
+        <h1>Portfolio eksamen</h1>
+      <div class="main-area">
+        <Squares/>
+      </div>
+      <section class="image_gallery">
+        <div class="scrollimage">
+        <ScrollImage 
+        image="/img/noface.webp"
+        text="Tema 1 - Introuge"
+        />
+        <ScrollImage 
+        image="/img/web.webp"
+        text="Tema 2 - Grundlæggende web"
+        />
+        <ScrollImage 
+        image="/img/UX.webp"
+        text="Tema 3 - Grundlæggende UX"
+        />
+        <ScrollImage 
+        image="/img/animation.webp"
+        text="Tema 4 - Grundlæggende animation"
+        />
+        <ScrollImage 
+        image="/img/indhold.webp"
+        text="Tema 5 - Grundlæggende indhold"
+        />
+        <ScrollImage 
+        image="/img/portfolio.webp"
+        text="Tema 6 - Portfolio eksamen"
+        />
+        <ScrollImage 
+        image="/img/noface.webp"
+        text="Tema 7 - Web II"
+        />
+        <ScrollImage 
+        image="/img/noface.webp"
+        text="Tema 8 - UI/UX II"
+        />
+        <ScrollImage 
+        image="/img/noface.webp"
+        text="Tema 9 - Indhold II"
+        />
+        <ScrollImage 
+        image="/img/noface.webp"
+        text="Tema 10 - Eksamensprojektet"
+        />
+        <ScrollImage 
+        image="/img/noface.webp"
+        text="Om mig"
+        />
+        </div>
+        <div class="arrows">
+          <i class="fa fa-angle-double-left"></i>
+          <i class="fas fa-mouse"></i>
+          <i class="fa fa-angle-double-right"></i>
+        </div>
+      </section>
+    </main>
+</MainLayout>
+
+<style>
+.image_gallery {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+div.scrollimage {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+
+div.scrollimage img {
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.arrows {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.fa-mouse {
+  font-size: 1.5rem;
+  margin-left: 50px;
+}
+
+.fa-angle-double-right {
+  margin-left: 50px;
+  font-size: 1.5rem;
+}
+
+.fa-angle-double-right:hover {
+  color: var(--tertiary);
+}
+
+.fa-angle-double-left {
+  font-size: 1.5rem;
+}
+
+.fa-angle-double-left:hover {
+  color: var(--tertiary);
+}
+</style>
