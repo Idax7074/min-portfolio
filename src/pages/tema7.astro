@@ -1,0 +1,127 @@
+---
+import MainLayout from "../layout/MainLayout.astro";
+---
+
+<MainLayout title="Tema 3">
+    <main>
+        <h1>Tema 7 - Web II</h1>
+        <section class="grid_1-1">
+          <div class="text">
+            <h2>07.02.01 Dynamic Site</h2>
+            <p>I dette forløb lærte vi hvordan man laver en hjemmeside dynamisk i stedet for statisk, ved bl.a. at bruge en open source firebase som Supa Base.</p>
+            <p>I opgave 07.02.01 Dynamic site lavede vi vores eget site udfra det data vi havde fået udleveret. Vi havde fokus på at lære js, som gjorde at vores site blev dynamisk.</p>
+          </div>
+          <div class="pic">
+            <img src="/img/FitFFitness.webp" alt="Lykke farve prototype billede" />
+            <div class="button">
+                <a href="https://idax7074.github.io/FitForFitness-IDA/">Fit For Fitness</a>
+              </div>
+          </div>
+        </section>
+      </main>
+</MainLayout>
+
+<style>
+  main {
+max-width: 1200px;
+}
+
+section {
+background-color: #df9f5740;
+padding: 50px;
+}
+
+h1 {
+margin-bottom: 80px;
+}
+
+h2 {
+margin-bottom: 20px;
+margin-top: 10px;
+}
+
+p {
+margin-bottom: 20px;
+}
+
+img {
+border-radius: 5px;
+}
+
+.button {
+margin-top: 40px;
+text-align: center;
+}
+
+.button a {
+background-color: var(--quinary);
+padding: 15px 30px;
+border-radius: 10px;
+color: var(--primary);
+text-decoration: none;
+text-transform: uppercase;
+font-family: parity-sans, sans-serif;
+font-weight: 500;
+font-style: normal;
+font-size: 1.2rem;
+}
+
+.button a:hover {
+  background-color: var(--primary);
+color: var(--quinary);
+border: 1px solid var(--quinary);
+}
+
+.reverse a {
+background-color: var(--primary);
+color: var(--quinary);
+border: 1px solid var(--quinary);
+padding: 15px 40px;
+}
+
+.reverse a:hover{
+  background-color: var(--quinary);
+  color: var(--primary);
+}
+
+@media (min-width: 821px) {
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 100px;
+}
+
+.order h2 {
+  text-align: end;
+}
+
+.order p {
+  text-align: end;
+}
+
+.pic2 {
+  display: none;
+}
+}
+
+@media (max-width: 820px) {
+main {
+  margin-inline: 10px;
+}
+
+section {
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.pic1 {
+  display: none;
+}
+
+.button {
+  margin-bottom: 80px;
+}
+}
+
+</style>

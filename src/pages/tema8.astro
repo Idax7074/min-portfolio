@@ -1,0 +1,149 @@
+---
+import MainLayout from "../layout/MainLayout.astro";
+---
+
+<MainLayout title="Tema 4">
+    <main>
+        <h1>Tema 8 - UI/UX II</h1>
+        <section class="grid_1-1">
+          <div class="text">
+            <h2>08.01.01 Re-design opgave</h2>
+            <p>I dette forløb lærte vi om Astro og Figma, vi havde før i tiden arbejdet i XD, når vi skulle lave prototyper. Vi lærte også om komponent-baseret design, som vi kunne bruge i både Figma og Astro.</p>
+            <p>
+              I denne opgave skulle vi enkeltvis redesigne en hjemmeside for musik og kunst festivalen FoEG.
+            </p>
+            <p>Her var der meget fokus på favrer og stile der passede til brandet, derfor lavede vi også en design research.</p>
+          </div>
+          <div class="pic">
+            <img src="/img/foeg.webp" alt="Guldbar spillet animation" />
+            <div class="button">
+              <a href="https://www.figma.com/proto/lumPq8QZsrGbkKW0WHMwZu/Foeg?page-id=0%3A1&type=design&node-id=11-60&viewport=6%2C49%2C0.06&t=iQtpK9ohn0CtLHWs-1&scaling=scale-down&starting-point-node-id=19%3A83&mode=design">FoEG</a>
+            </div>
+          </div>
+          <div class="pic1">
+            <img src="/img/kune.webp" alt="La fresca website billede" />
+            <div class="button reverse">
+              <a href="https://kunefestival-resi.netlify.app/">KUNE</a>
+            </div>
+          </div>
+          <div class="text order">
+            <h2>08.04.01 Dokumentationsrapport</h2>
+            <p>
+              Til opgaven havde skolen indgået et samarbejde med KUNE festival, her skulle vi lave et redesign af deres allerede eksisterende hjemmeside. Vi kiggede på deres grundværdier, for at fastslå hvilken stil vi gerne ville køre i.
+            </p>
+            <p>Også her lavede vi en design research, her undersøgte vi bl.a. større festivaler for at findee ud af hvad der kunne ændres på det eksisterende site.</p>
+          </div>
+          <div class="pic2">
+            <img src="/img/kune.webp" alt="La fresca website billede" />
+            <div class="button reverse">
+              <a href="https://kunefestival-resi.netlify.app/">KUNE</a>
+            </div>
+          </div>
+        </section>
+      </main>
+</MainLayout>
+
+<style>
+  main {
+max-width: 1200px;
+}
+
+section {
+background-color: #e77d7940;
+padding: 50px;
+}
+
+h1 {
+margin-bottom: 80px;
+}
+
+h2 {
+margin-bottom: 20px;
+margin-top: 10px;
+}
+
+p {
+margin-bottom: 20px;
+}
+
+img {
+border-radius: 5px;
+}
+
+.button {
+margin-top: 40px;
+text-align: center;
+}
+
+.button a {
+background-color: var(--septenary);
+padding: 15px 30px;
+border-radius: 10px;
+color: var(--primary);
+text-decoration: none;
+text-transform: uppercase;
+font-family: parity-sans, sans-serif;
+font-weight: 500;
+font-size: 1.2rem;
+font-style: normal;
+}
+
+.button a:hover {
+  background-color: var(--primary);
+color: var(--septenary);
+border: 1px solid var(--septenary);
+}
+
+.reverse a {
+background-color: var(--primary);
+color: var(--septenary);
+border: 1px solid var(--septenary);
+padding: 15px 40px;
+}
+
+.reverse a:hover{
+  background-color: var(--septenary);
+  color: var(--primary);
+}
+
+@media (min-width: 821px) {
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 100px;
+}
+
+.order h2 {
+  text-align: end;
+}
+
+.order p {
+  text-align: end;
+}
+
+.pic2 {
+  display: none;
+}
+}
+
+@media (max-width: 820px) {
+main {
+  margin-inline: 10px;
+}
+
+section {
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.pic1 {
+  display: none;
+}
+
+.button {
+  margin-bottom: 80px;
+}
+}
+
+</style>

@@ -1,0 +1,414 @@
+---
+import MainLayout from "../layout/MainLayout.astro";
+---
+<MainLayout>
+<main>
+<section>
+    <h1>Om mig</h1>
+    <div class="grid_1-1">
+      <div class="text">
+        <h2>Hey!</h2>
+        <p>Mit navn Ida Marie Stoffersen Hjortnæs og jeg er 22 år gammel. Jeg bor i Gundsømagle med mine forældre og lillebror. Vi har boet her siden jeg var 4 år gammel. Før Gundsømagle boede vi i en lejlighed i Roskilde.</p>
+        <p>Lige siden jeg var lille, har jeg elsket at være kreativ om det så er at male, fotografere, redigere videoer, synge eller madlavning. Når jeg er kreativ, får jeg lov til at koble hjerne fra, og bare nyde det jeg laver.</p>
+        <p>
+          Jeg har hele tiden vist at jeg skulle lave noget, hvor jeg kunne bruge min kreative side, og ikke bare sidde med hovedet i en bog. <br />
+          Så denne uddannelse er det perfekte match. Under uddannelsen har jeg rykket mig meget fagligt og opdaget nye interesser.
+        </p>
+      </div>       
+       <div class="facts">
+          <h2>De tre random</h2>
+          <ul>
+            <li>Jeg er ordblind</li>
+            <li>Mit mellemnavn er en familietradition</li>
+            <li>Jeg er laktoseintolerant</li>
+          </ul>
+        </div>
+      <div class="pic">
+        <img src="img/portrait_2.webp" alt="Potræt billede af Ida" />
+      </div>
+    </div>
+    <div class="grid_1-1-1">
+      <img src="img/paint.webp" class="image_1" alt="Maling" />
+      <img src="img/portrait_1.webp" class="image_2" alt="Portræt billede af Ida" />
+      <img src="img/picture.webp" class="image_3" alt="Billeder" />
+      <img src="img/music.webp" class="image_4" alt="Music" />
+      <img src="img/portrai_3.webp" class="image_5" alt="Portræt billede af Ida" />
+    </div>
+  </section>
+  <section class="grid_1-1_3">
+    <div class="kontakt">
+      <h3>Kontakt</h3>
+      <div class="social-media">
+        <i class="fa-solid fa-phone"></i>
+        <p>+45 27 14 36 09</p>
+        <i class="fa-solid fa-envelope"></i>
+        <p>idax327t@stud.kea.dk</p>
+        <i class="fa-brands fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/ida-marie-hjortn%C3%A6s/">Ida Marie Stoffersen</a>
+        <i class="fa-brands fa-instagram"></i>
+        <a href="https://www.instagram.com/idax7074/">@idax7074</a>
+      </div>
+    </div>
+    <div class="uddannelse">
+      <h3>Uddannelse</h3>
+      <div class="uddannelser">
+        <ul>
+          <li>
+            Roskilde gymnasium
+            <ul>
+              <li class="tid">2017 - 2020</li>
+            </ul>
+          </li>
+          <li>
+            Ølstykke 10. klassecenter
+            <ul>
+              <li class="tid">2016 - 2017</li>
+            </ul>
+          </li>
+          <li>
+            Margretheskolen
+            <ul>
+              <li class="tid">2006 - 2016</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="profil">
+      <h3>Profil</h3>
+      <div class="om_mig">
+        <ul>
+          <li>22 år</li>
+          <li>Bosat i Gundsømagle</li>
+          <li>Udadvemdt, ansvarsfuld og ambitiøs</li>
+        </ul>
+      </div>
+    </div>
+    <div class="erfaring">
+      <h3>Erfaring</h3>
+      <div class="job">
+        <ul>
+          <li>
+            Kassemedarbejder
+            <ul>
+              <li class="kvickly">Kvickly//Jyllinge//Oktober 2020 - Juni 2022</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="interesser">
+      <h3>Interesser</h3>
+      <div class="mine_interesser">
+        <ul>
+          <li>Kreative projekter</li>
+          <li>Kvalitetstid med venner</li>
+          <li>Madlavning og bagning</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+</MainLayout>
+
+<style>
+    h1 {
+  margin-bottom: 80px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+h3 {
+  font-family: puffin-display-soft, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--tertiary);
+}
+
+.facts li {
+  margin-bottom: 12px;
+  margin-left: 15px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.facts li {
+  list-style: circle;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.grid_1-1 img {
+  border: 4px solid var(--quinary);
+}
+
+.pic {
+  padding: 4px;
+  background: var(--septenary);
+  border-radius: 5px;
+
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-block: 50px;
+}
+
+.image_4 {
+  grid-column: span 2;
+}
+
+section {
+  margin-top: 30px;
+}
+
+.grid_1-1_3 {
+  background-color: #f5ca9e40;
+  padding: 60px;
+  margin-top: 100px;
+}
+
+.grid_1-1_3 h3 {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--tertiary);
+}
+
+.grid_1-1_3 div > * {
+  margin-top: 15px;
+}
+
+.social-media {
+  display: grid;
+  grid-template-columns: 1fr 15fr;
+  padding-top: 10px;
+}
+
+.social-media > * {
+  margin-block: 10px;
+}
+
+.social-media a {
+  font-family: puffin-display-soft, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: var(--secondary);
+  text-decoration: none;
+  margin-block: 10px;
+}
+
+.social-media i {
+  font-size: 1.4rem;
+}
+
+.uddannelser {
+  padding-top: 10px;
+}
+
+.tid {
+  text-align: end;
+  font-size: 0.9rem;
+}
+
+.uddannelser li {
+  margin-bottom: 2px;
+  list-style: none;
+  margin-block: 10px;
+}
+
+.om_mig li {
+  list-style: circle;
+  margin-bottom: 20px;
+}
+
+.om_mig {
+  padding-top: 10px;
+}
+
+.job {
+  padding-top: 10px;
+}
+
+.job li {
+  list-style: none;
+  margin-block: 10px;
+  margin-bottom: 2px;
+}
+
+.kvickly {
+  font-size: 0.9rem;
+  margin-block: 10px;
+}
+
+.interesser {
+  margin-top: 30px;
+}
+
+.mine_interesser {
+  padding-top: 10px;
+}
+
+.mine_interesser li {
+  list-style: circle;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 821px) {
+  main {
+    max-width: 1200px;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .grid_1-1_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .grid_1-1_3 h3 {
+    margin-inline: 80px;
+  }
+
+  .social-media {
+    margin-left: 80px;
+  }
+
+  .uddannelser {
+    margin-left: 80px;
+  }
+
+  .tid {
+    margin-right: 80px;
+  }
+
+  .om_mig li {
+    margin-left: 95px;
+  }
+
+  .job li {
+    margin-left: 80px;
+  }
+
+  .mine_interesser li {
+    margin-left: 95px;
+  }
+}
+
+@media (max-width: 820px) {
+  main {
+    margin-inline: 10px;
+  }
+
+  .pic {
+    margin-top: 30px;
+  }
+
+  .kontakt {
+    margin-bottom: 40px;
+  }
+
+  .uddannelse {
+    margin-bottom: 40px;
+  }
+
+  .profil {
+    margin-bottom: 40px;
+  }
+
+  .erfaring {
+    margin-bottom: 40px;
+  }
+
+  .interesser {
+    margin-bottom: 40px;
+  }
+
+  .kvickly li {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 1105px) {
+  main {
+    margin-inline: 10px;
+  }
+}
+
+@media (max-width: 1105px) and (min-width: 1090px) {
+  .pic {
+    height: 527px;
+  }
+}
+
+@media (max-width: 1090px) and (min-width: 1060px) {
+  .pic {
+    height: 520px;
+  }
+}
+
+@media (max-width: 1060px) and (min-width: 1030px) {
+  .pic {
+    height: 505px;
+  }
+}
+
+@media (max-width: 1030px) and (min-width: 997px) {
+  .pic {
+    height: 488px;
+  }
+}
+
+@media (max-width: 997px) and (min-width: 967px) {
+  .pic {
+    height: 474px;
+  }
+}
+
+@media (max-width: 967px) and (min-width: 945px) {
+  .pic {
+    height: 459px;
+  }
+}
+
+@media (max-width: 945px) and (min-width: 922px) {
+  .pic {
+    height: 448px;
+  }
+}
+@media (max-width: 922px) and (min-width: 893px) {
+  .pic {
+    height: 437px;
+  }
+}
+
+@media (max-width: 893px) and (min-width: 865px) {
+  .pic {
+    height: 422px;
+  }
+}
+
+@media (max-width: 865px) and (min-width: 835px) {
+  .pic {
+    height: 408px;
+  }
+}
+
+</style>
